@@ -8,6 +8,18 @@
 - Never commit secrets or `.env` files.
 - Target JDK: **Java 21 LTS** (or newer LTS if available). Build tool: Maven (Gradle optional). IDE: IntelliJ IDEA Community or VS Code + Java extensions.
 
+### Book chapters skipped on purpose
+
+These chapters are **not** scheduled in the weekly plan (time goes to modern topics already listed: collections/streams depth, JDBC ch.17, JPA, Spring Boot, buffer-week catch-up).
+
+| Chapter | Topic | Why skip |
+|---|---|---|
+| **Ch.13** | Graphical interfaces (AWT/Swing) | Dated desktop UI; the lab targets APIs, JVM, and Spring — not Swing apps. |
+| **Ch.14** | Applets | Removed/deprecated in modern JDKs; not applicable to current Java. |
+| **Ch.15** | Servlets | Raw servlet programming; **Spring Boot** (from Week 3 onward) is the web path instead of hand-written servlets. |
+
+**Still in the plan (book):** **Ch.16** Serialization and RMI — **skim only** in Week 4 (know that `Serializable` exists; treat RMI as legacy; prefer HTTP/JSON and Spring). **Ch.17** JDBC — read in Week 4 alongside Spring Data JPA so you see what JPA abstracts (drivers, `Connection`, prepared statements, try-with-resources).
+
 ## Daily 1-hour block template
 
 | Minutes | Activity | Notes |
@@ -138,9 +150,9 @@ Closing habit (2 min inside the hands-on slot): add a one-line "what I learned /
 
 **Topics:** why generics (RTTI/casts problem); generic classes and methods; bounded types, wildcards (PECS); type erasure; Collections Framework interfaces; **ArrayList** (resizing, amortized O(1) append), **HashMap/HashSet** (hashing, buckets, `equals`/`hashCode` contract, load factor, resize, treeification), `LinkedList`, `TreeMap`, `ArrayDeque`; `Comparable` vs `Comparator`; immutability (`List.of`, `Map.of`); **Spring Data JPA:** entity, repository, H2 → PostgreSQL, derived queries, transactions, N+1 awareness.
 
-**Book:** Ch.12 Generics and Collections Framework (pp.179–200) — read §12.1–12.6 fully; Ch.17 Java Database Connectivity (pp.297+) as optional background for what JPA hides.
+**Book:** Ch.12 Generics and Collections Framework (pp.179–200) — read §12.1–12.6 fully; **Ch.16** Serialization and RMI — **skim only** via the book TOC (serialization overview; do not invest in RMI); **Ch.17** Java Database Connectivity (pp.297+) — core JDBC sections while learning JPA (see daily split). *(Ch.13–15 are skipped; see [Book chapters skipped on purpose](#book-chapters-skipped-on-purpose).)*
 
-**Daily split:** Mon generics ch.12 §12.1–12.3 · Tue wildcards/erasure · Wed ArrayList & HashMap internals · Thu sorting/searching, `equals`/`hashCode` · Fri JPA entity + repository · Sat JPA queries + review.
+**Daily split:** Mon generics ch.12 §12.1–12.3 · Tue wildcards/erasure · Wed ArrayList & HashMap internals · Thu sorting/searching, `equals`/`hashCode`, extra streams/collections practice · Fri JPA entity + repository · Sat JPA queries + **ch.17 JDBC skim** (contrast with JPA) + **ch.16 serialization skim** + review.
 
 **Free resources:**
 - Oracle Tutorials: *Generics*, *Collections*.

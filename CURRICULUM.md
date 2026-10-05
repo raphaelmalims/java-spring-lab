@@ -1,6 +1,8 @@
 # CURRICULUM — Java refresher → Spring Boot → Java ML/AI systems
 
-**Learner:** Raphael Malims · **Start:** Mon 5 Oct 2026 · **Cadence:** 1 h/day, Mon–Sat (Sat = longer-feeling "build & review" day, still 1 h) · **Length:** 10 weeks + 1 buffer week (14–19 Dec 2026)
+**Learner:** Raphael Malims · **Start:** Mon 5 Oct 2026 · **Cadence:** 1 h/day, Mon–Sat (Sat = lighter morning build & review, still 1 h) · **Length:** 10 weeks + 1 buffer week (14–19 Dec 2026)
+
+**Source of truth:** This file is the detailed Java study plan. External planners (e.g. Notion Upskill) show at most a short summary and link here — do not treat Upskill week bullets as a substitute for this document.
 
 **Ground rules**
 - Raphael writes **all** exercise code himself. Exercise prompts below are *problem statements only*; no solutions are provided by agents. Agents write lectures, notes and reviews only.
@@ -25,7 +27,7 @@ These chapters are **not** scheduled in the weekly plan (time goes to modern top
 | Minutes | Activity | Notes |
 |---|---|---|
 | 0–10 | **Recap** | Without looking: write 3 bullets from yesterday + answer 1 self-check question from the previous lecture. Skim your last compile/test error. |
-| 10–30 | **Lecture read** | Read the day's lecture in `lectures/` and the assigned book pages / doc links. Mark 2 things you did not understand. |
+| 10–30 | **Lecture read** | When a lecture file exists for the day, read it in `lectures/` plus assigned book pages / doc links. **Week 1 Wed–Sat:** no separate lecture file — use this week's daily split and book sections below. Mark 2 things you did not understand. |
 | 30–60 | **Hands-on** | Do the day's exercise prompt(s) in `exercises/` **by typing the code yourself**. Compile and run. Commit when it works (or note exactly where you are stuck in `notes/`). |
 
 Closing habit (2 min inside the hands-on slot): add a one-line "what I learned / what confused me" to `notes/`.
@@ -67,7 +69,22 @@ Closing habit (2 min inside the hands-on slot): add a one-line "what I learned /
 
 **Book:** Ch.1 Introduction (pp.1–5), Ch.2 Object, Class, Message and Method (pp.7–14), Ch.3 A Quick Tour of Java (pp.17–36), Ch.4 Implementation in Java (pp.39–49), Ch.5 Classification, Generalization, Specialization (pp.51–58).
 
-**Daily split (Mon–Sat):** Mon ch.1–3 — read `lectures/2026-10-05-ch1-3-oop-basics.md`, hands-on from that lecture's exercise list · Tue ch.4–5 — read `lectures/2026-10-06-ch4-5-implementation-classification.md` (ch.4 is one worked example, so both chapters fit one block; finish leftover lecture exercises on Wed if needed) · Wed ch.3 deep-dive — book §3.8–3.12 (control flow, arrays, pass-by-value); no separate lecture file; reinforce constructors/overloading from Mon · Thu CURRICULUM hands-on **#3** (Calculator engine vs UI) and **#4** (abstract hierarchy) · Fri modern basics (`var`, records, enums, text blocks, switch expressions) + hands-on **#5** (record vs class) · Sat review, hands-on **#1–2** if not done yet, proof artifact (`exercises/week1/`, `notes/week1.md`, tag `week1`).
+**Week 1 hands-on budget:** ~**3 hours** of typing code for the whole week (~30 min/day in the block above). Quality over quantity: **five** weekly prompts below are the proof set; Mon/Tue lectures add reading and light prep only — not a second parallel exercise list.
+
+**Lecture files (Mon–Tue only):** Wed, Thu, Fri, and Sat have **no** `lectures/` Markdown for Week 1. Run those days from this section (book pages + weekly hands-on #1–5). Do not invent schedule changes inside lecture files; they cite this week only.
+
+**Daily split (Mon–Sat):**
+
+| Day | Read | Primary hands-on (30 min) |
+|---|---|---|
+| **Mon** | `lectures/2026-10-05-ch1-3-oop-basics.md` + book ch.1–3 (§3.1–3.7 closely; §3.8–3.12 skim) | Optional: message-tracing and overload notes from the lecture — **no required code** today |
+| **Tue** | `lectures/2026-10-06-ch4-5-implementation-classification.md` + book ch.4–5 | Optional prep for **#3:** hand-trace the book calculator in `notes/`, then type Listing 4-2 yourself (see Tue lecture) — feeds Thu **#3**, not a separate obligation |
+| **Wed** | Book ch.3 **§3.8–3.12** (control flow, arrays, pass-by-value); reinforce constructors/overloading from Mon | Weekly **#1** — bank account class |
+| **Thu** | Book ch.4–5 review as needed | Weekly **#3** — Calculator engine vs UI |
+| **Fri** | dev.java / JEP links below: `var`, records, enums, text blocks, switch expressions | Weekly **#4** — abstract hierarchy (+ diagram in `notes/`) |
+| **Sat** | Week recap; catch up only if a day was missed (do not double up on a weekday) | Weekly **#2** instance counter/IDs if not done yet, **#5** record vs class, then **proof artifact** |
+
+**Proof artifact (Sat):** copy or consolidate the five weekly exercises into `exercises/week1/` (each runnable with a one-line run hint in a comment), `notes/week1.md` (5 bullets "what clicked", 3 "still fuzzy"), commit tagged `week1`. Dated folders from Mon/Tue prep (`exercises/2026-10-05-ch1-3/`, `exercises/2026-10-06-ch4-5/`) are optional scratch; proof lives under `exercises/week1/`.
 
 **Free resources:**
 - Oracle Tutorials: *Learning the Java Language* (Object-Oriented Programming Concepts, Language Basics, Classes and Objects, Numbers and Strings, Enum Types).

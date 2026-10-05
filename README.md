@@ -13,7 +13,7 @@ Become a confident Java professional: core language, when to use classes vs reco
 
 | Path | What lives there |
 |---|---|
-| `CURRICULUM.md` | The ~10-week plan (+ buffer week), exercise prompts and proof artifacts |
+| `CURRICULUM.md` | **Source of truth** for the ~10-week plan (+ buffer week), exercise prompts and proof artifacts |
 | `lectures/` | One Markdown lecture per study block, e.g. `2026-10-05-ch1-3-oop-basics.md` |
 | `exercises/` | **Raphael's own code.** Nothing here is written by an agent |
 | `notes/` | Personal notes, review feedback, cheat-sheets |

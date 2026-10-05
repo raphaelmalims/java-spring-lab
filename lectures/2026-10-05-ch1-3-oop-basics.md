@@ -82,7 +82,7 @@ Several methods may share a name if their **parameter lists differ** (number or 
 - A method returns exactly one value (or none with `void`). Parameters are **passed by value** — for object parameters, the *reference* is copied (so a method can mutate the object, but can't re-point the caller's variable).
 
 ### Modern Java footnote (not in the book)
-Since Java 10 you may write `var list = new ArrayList<String>();` for **local** variables (type inferred at compile time — still statically typed). Since Java 16, `record Point(int x, int y) {}` declares an immutable data class in one line. We cover both in Week 1 Friday.
+Since Java 10 you may write `var x = 42;` or `var name = "hello";` for **local** variables (type inferred at compile time — still statically typed). Since Java 16, `record Point(int x, int y) {}` declares an immutable data class in one line. Hands-on practice for `var`, records, and related features is on **Fri** per `CURRICULUM.md` Week 1.
 
 ---
 
@@ -126,14 +126,16 @@ Heuristics:
 
 ---
 
-## 7. Exercises (write the code yourself — no solutions here)
+## 7. Hands-on (Mon — optional prep; weekly code starts Wed)
 
-Put your work in `exercises/2026-10-05-ch1-3/`. Compile and run each one; commit when it works.
+Week 1 targets ~**30 min of code per day**; the **five proof exercises** live in `CURRICULUM.md` Week 1 (**#1** bank account on **Wed**, not today). Use today's slot for the lecture + book; add the items below only if you have time — they are **not** extra proof obligations.
 
-1. **Lamp-to-your-own-domain.** Choose a real-world thing from your life (not a lamp, not a bank account) and write a class for it with at least two private fields, one constructor, and three methods. In a `main`, create two instances and show they keep separate state.
-2. **Message tracing.** Write down (in comments or `notes/`) the message flow for this story in the book's terms — sender, receiver, message, parameters, result, method: *"A customer asks a barista for a flat white with oat milk; the barista replies with the price."* Then implement it as two classes and one `main`, sending the message from the customer object to the barista object.
-3. **Overload it.** Write a class `Formatter`-like utility of your own naming with at least three overloaded methods that present a value in different ways (choose the types and output format yourself). In `notes/`, explain in two sentences how Java decides which overload runs when you call it with, say, an `int` vs a `long` vs a `String`.
-4. **Class or function?** Take five small things from this list and decide, with a one-line reason each, whether you'd write a class, record, interface or static function: *a temperature converter, a shopping cart, an email validator, a 2-D point, a payment gateway that might be Stripe or PayPal, a stopwatch.* Write the decisions in `notes/2026-10-05-decisions.md`, then implement the temperature converter and the stopwatch in whichever form you chose for each, and note whether the decision still feels right once you have written them.
+**Optional notes (no code required):**
+
+1. **Message tracing.** In `notes/`, describe sender, receiver, message, parameters, and method for: *"A customer asks a barista for a flat white with oat milk; the barista replies with the price."* Optionally implement as two classes in `exercises/2026-10-05-ch1-3/` if you want practice before **#1**.
+2. **Overload sketch.** On paper or in `notes/`, sketch three overloads of one method name with different parameter lists and write two sentences on how the compiler picks an overload for `int` vs `long` vs `String`.
+
+**Optional code (scratch folder `exercises/2026-10-05-ch1-3/`):** a small domain class (two private fields, constructor, three methods, two instances in `main`) using any domain you like — including a bank account if you are eager, but **Wed #1** is the canonical bank-account exercise for the proof set.
 
 ## 8. Self-check (answer in `notes/`, then check against the book)
 

@@ -6,7 +6,7 @@
 
 **Goal for today:** (a) follow a whole class from source file → `javac` → `java` → running objects, and see why the "engine" should be kept apart from the "user interface"; (b) be able to sort objects into classes, arrange those classes into a hierarchy, and say which classes are abstract and which are concrete.
 
-> **Pacing note:** CURRICULUM.md schedules ch.4 and ch.5 together on **Tue** (this file). ch.4 is mostly one worked example; ch.5 is mostly vocabulary and hierarchy design. If the hour runs out, do exercises 1 and 4 today and finish 2 and 3 on **Wed** (book ch.3 deep-dive day). §4.3–4.4 use AWT, a GUI library. Ch.13 (GUI) is **skipped** in this lab, so read §4.4 only for the *event-driven* idea and don't study the AWT API.
+> **Pacing note:** `CURRICULUM.md` Week 1 schedules ch.4 and ch.5 together on **Tue** (this file). ch.4 is mostly one worked example; ch.5 is mostly vocabulary and hierarchy design. **Wed** is book ch.3 §3.8–3.12 plus weekly hands-on **#1** — do not stack a second full exercise list on Wed. §4.3–4.4 use AWT; ch.13 is **skipped**, so read §4.4 only for the *event-driven* idea.
 
 ---
 
@@ -175,19 +175,13 @@ Lecture 1's decision questions (state? rules to protect? just data? several impl
 
 ---
 
-## Exercises (write the code yourself; no solutions here)
+## Exercises (Tue — prep for Thu **#3**; no solutions here)
 
-Put your work in `exercises/2026-10-06-ch4-5/`. Compile and run each one, and commit when it works. Exercises 2 and 4 are warm-ups for CURRICULUM Week 1 exercises 3 and 4.
+Thu's weekly **#3** (Calculator engine vs UI) is the main coding goal for ch.4. Today: read + optional prep in `notes/` and `exercises/2026-10-06-ch4-5/` — **one** focused item below, not a four-exercise list.
 
-1. **Trace, then type.** Before writing any code, draw a table in `notes/2026-10-06-trace.md` with columns *key pressed · `value` · `keep` · `toDo`*, and fill it in **by hand** for these key sequences on the book's engine: `1 3 + 1 1 =` · `9 - 4 = =` · `5 + =` · `8 / 0 =` · `= 7`. Then type Listing 4-2 yourself (don't paste it), compile it with `javac`, run it with `java`, and change `main` to check each prediction. Mark each row where your prediction was wrong and write one sentence on why.
+1. **Trace, then type (recommended if you code today).** Draw a table in `notes/2026-10-06-trace.md` with columns *key pressed · `value` · `keep` · `toDo`* and fill it **by hand** for: `1 3 + 1 1 =` · `9 - 4 = =` · `5 + =` · `8 / 0 =` · `= 7`. Then type Listing 4-2 yourself (don't paste), compile with `javac`, run with `java`, and use `main` to check predictions. Wrong rows get one sentence in `notes/` on why.
 
-2. **Grow the engine without touching the UI's job.** Extend your own copy of the engine with two **unary** operations (one operand, e.g. square and factorial, or your own choice). Before coding, write in `notes/` how a unary operation differs from a binary one in what it does to `value`, `keep` and `toDo`. Also decide and document a policy for division by zero (what the user sees, and what state the engine is left in), and implement it. Then add keys for the new operations to a line-mode front end you write yourself (`Scanner` is fine). Constraint: the engine class must contain **no** `System.out` and **no** input reading.
-
-3. **Event-driven without a GUI.** Without using AWT or Swing, simulate event-driven control. Write a small class that represents a *button*: it has a label and a reference to the engine it notifies, and when it's "pressed" it sends the right message to the engine. In `main`, build a set of buttons, then press them in an order that **`main` doesn't hard-code**: take it from the command-line arguments, or from a line the user types. In `notes/`, answer: in your program, who decides the order in which engine methods run, and how is that different from exercise 1's `main`?
-
-4. **Classify a domain of your own.** Choose a domain from your own work or life (not animals, not employees, not vehicles). List at least 10 concrete objects, each with a few properties and behaviours, like Table 5-1. In `notes/2026-10-06-classification.md`: (a) classify them into classes; (b) **generalize** upward at least two levels, naming each new superclass and the similarity it captures; (c) mark every class *abstract* or *concrete*; (d) for one place where you were tempted to make a subclass, explain why a field would or wouldn't do instead. Then write empty-bodied Java classes for the hierarchy using `abstract` and `extends`, get them compiling, and add one line to `main` that tries to instantiate an abstract class. Paste the compiler's error message into your notes, then comment the line out.
-
-*(Optional warm-up if time remains: do book §5.8 Q2–Q4 on paper, classifying Aaron the ant through Angel the goldfish.)*
+**Optional (only if Tue runs long and Thu **#3** is still ahead):** book §5.8 Q2–Q4 on paper; or skim ch.5 classification ideas — the proof hierarchy exercise is **#4** on **Fri** in `CURRICULUM.md`, not a duplicate Tue obligation.
 
 ## Self-check (answer in `notes/`, then check against the book)
 

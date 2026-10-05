@@ -1,12 +1,12 @@
 # Lecture 2: Implementation in Java (Calculator) + Classification, Generalization, Specialization
 
-**Date:** Tue 6 Oct 2026, 08:00–09:00 · **Book:** *Object-Oriented Programming and Java*, 2nd ed.: Ch.4 Implementation in Java (pp.39–49) and Ch.5 Classification, Generalization, and Specialization (pp.51–58)
+**Date:** Tue 6 Oct 2026 · **Book:** *Object-Oriented Programming and Java*, 2nd ed.: Ch.4 Implementation in Java (pp.39–49) and Ch.5 Classification, Generalization, and Specialization (pp.51–58)
 
 **Time plan (1 h):** 10 min recap (3 bullets from Lecture 1, then answer Lecture 1 self-check Q5 from memory) · 20 min read this lecture + book pages · 30 min hands-on (exercises below).
 
 **Goal for today:** (a) follow a whole class from source file → `javac` → `java` → running objects, and see why the "engine" should be kept apart from the "user interface"; (b) be able to sort objects into classes, arrange those classes into a hierarchy, and say which classes are abstract and which are concrete.
 
-> **Pacing note:** CURRICULUM.md suggests ch.4 on Wed and ch.5 on Thu. Today covers both because ch.4 is mostly one worked example and ch.5 is mostly vocabulary. If the hour runs out, do exercises 1 and 4 today and finish 2 and 3 on Wednesday. §4.3–4.4 use AWT, a GUI library. Ch.13 (GUI) is **skipped** in this lab, so read §4.4 only for the *event-driven* idea and don't study the AWT API.
+> **Pacing note:** CURRICULUM.md schedules ch.4 and ch.5 together on **Tue** (this file). ch.4 is mostly one worked example; ch.5 is mostly vocabulary and hierarchy design. If the hour runs out, do exercises 1 and 4 today and finish 2 and 3 on **Wed** (book ch.3 deep-dive day). §4.3–4.4 use AWT, a GUI library. Ch.13 (GUI) is **skipped** in this lab, so read §4.4 only for the *event-driven* idea and don't study the AWT API.
 
 ---
 

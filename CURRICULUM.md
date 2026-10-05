@@ -67,7 +67,7 @@ Closing habit (2 min inside the hands-on slot): add a one-line "what I learned /
 
 **Book:** Ch.1 Introduction (pp.1–5), Ch.2 Object, Class, Message and Method (pp.7–14), Ch.3 A Quick Tour of Java (pp.17–36), Ch.4 Implementation in Java (pp.39–49), Ch.5 Classification, Generalization, Specialization (pp.51–58).
 
-**Daily split (suggested):** Mon ch.1–3 (see `lectures/2026-10-05-ch1-3-oop-basics.md`) · Tue ch.3 deep-dive (types, constructors, overloading) · Wed ch.4 · Thu ch.5 · Fri modern basics (`var`, records, enums, switch expressions) · Sat review & mini-project.
+**Daily split (Mon–Sat):** Mon ch.1–3 — read `lectures/2026-10-05-ch1-3-oop-basics.md`, hands-on from that lecture's exercise list · Tue ch.4–5 — read `lectures/2026-10-06-ch4-5-implementation-classification.md` (ch.4 is one worked example, so both chapters fit one block; finish leftover lecture exercises on Wed if needed) · Wed ch.3 deep-dive — book §3.8–3.12 (control flow, arrays, pass-by-value); no separate lecture file; reinforce constructors/overloading from Mon · Thu CURRICULUM hands-on **#3** (Calculator engine vs UI) and **#4** (abstract hierarchy) · Fri modern basics (`var`, records, enums, text blocks, switch expressions) + hands-on **#5** (record vs class) · Sat review, hands-on **#1–2** if not done yet, proof artifact (`exercises/week1/`, `notes/week1.md`, tag `week1`).
 
 **Free resources:**
 - Oracle Tutorials: *Learning the Java Language* (Object-Oriented Programming Concepts, Language Basics, Classes and Objects, Numbers and Strings, Enum Types).
